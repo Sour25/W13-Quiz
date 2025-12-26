@@ -15,7 +15,7 @@ class _GroceryFilterState extends State<GroceryFilter> {
   @override
   Widget build(BuildContext context) {
     final filteredGroceries = dummyGroceryItems.where((grocery) {
-      return grocery.name.toLowerCase().startsWith(searchText.toLowerCase());
+      return grocery.name.toLowerCase().contains(searchText.toLowerCase());
     }).toList();
 
     return Scaffold(
