@@ -49,12 +49,12 @@ class _GroceryListState extends State<GroceryList> {
         currentIndex: 1, // Grocery page index
         onTap: (index) {
           if (index == 0) {
-            Navigator.pushReplacement(
+            Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const GroceryList()),
             );
           } else if (index == 1) {
-            Navigator.pushReplacement(
+            Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const GroceryFilter()),
             );
